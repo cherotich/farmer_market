@@ -17,6 +17,11 @@ class PlatformApp extends StatelessWidget {
       return CupertinoApp(
         home: Login(),
         onGenerateRoute: Routes.curpertinoRoutes,
+      theme: CupertinoThemeData(
+
+        scaffoldBackgroundColor: Colors.white
+      )
+      
       );
     }
     else {
@@ -24,6 +29,7 @@ class PlatformApp extends StatelessWidget {
         return MaterialApp(
       home: Login(),
       onGenerateRoute: Routes.materialRoutes,
+      theme: ThemeData(scaffoldBackgroundColor: Colors.white)
     );
     }
   
